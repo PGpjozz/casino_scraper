@@ -1,0 +1,151 @@
+:root {
+  --bg: #f4f1ea;
+  --surface: #fffcf7;
+  --ink: #1b1b18;
+  --muted: #5c584f;
+  --line: #d9d2c5;
+  --accent: #1f4d3a;
+  --accent-ink: #f4f1ea;
+  --warn: #6b3b12;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  margin: 0 0 0.4rem;
+}
+
+.meta,
+.notice {
+  color: var(--muted);
+  font-family: system-ui, sans-serif;
+  font-size: 0.95rem;
+}
+
+.notice {
+  border-left: 4px solid var(--warn);
+  padding: 0.75rem 1rem;
+  background: #fff6ec;
+  color: var(--warn);
+  margin: 1.25rem 0 1.75rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 640px;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+th {
+  font-family: system-ui, sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: #efe8db;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+a {
+  color: var(--accent);
+}
+
+.na {
+  color: var(--muted);
+  font-style: italic;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.status {
+  font-family: system-ui, sans-serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.cards {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .table-wrap {
+    display: none;
+  }
+
+  .cards {
+    display: grid;
+    gap: 1rem;
+  }
+
+  article {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+  }
+
+  dl {
+    margin: 0.75rem 0 0;
+  }
+
+  dt {
+    font-family: system-ui, sans-serif;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: var(--muted);
+    margin-top: 0.65rem;
+  }
+
+  dd {
+    margin: 0.15rem 0 0;
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "source": {
+    "url": "https://www.askgamblers.com/casino-bonuses/welcome",
+    "name": "www.askgamblers.com",
+    "retrieved_at": "2026-10-14T16:30:18+00:00",
+    "robots_checked": true,
+    "blocked": false
+  },
+  "model": "claude-haiku-5-5",
+  "status": "ok",
+  "casinos": [
+    {
+      "casino_name": "Jackpot City Casino",
+      "welcome_bonus": "100% up to 4000 ZAR",
+      "wagering_requirement": {
+        "multiplier": 10.0,
+        "applies_to": "bonus",
+        "notes": "Source shorthand 10xb: 10x on the bonus amount only."
+      },
+      "minimum_deposit": {
+        "amount": 50.0,
+        "currency": "ZAR",
+        "notes": null
+      },
+      "source_url": "https://www.askgamblers.com/casino-bonuses/latest/jackpot-city-casino-bonus-100percent-up-to-4000-zar-2026-02-18",
+      "extraction_status": "ok",
+      "validation_notes": null,
+      "retrieved_at": "2026-10-14T16:30:18+00:00",
+      "raw_source_text": "Jackpot City Casino\n100% up to 4000 ZAR\nMinimum Deposit 50 ZAR. Wagering Requirements 10xb"
+    },
+    {
+      "casino_name": "YesPlay Casino",
+      "welcome_bonus": "100% up to 3000 ZAR",
+      "wagering_requirement": {
+        "multiplier": 7.0,
+        "applies_to": "deposit_plus_bonus",
+        "notes": "Source shorthand 7x(d+b): 7x on deposit plus bonus."
+      },
+      "minimum_deposit": {
+        "amount": 20.0,
+        "currency": "ZAR",
+        "notes": null
+      },
+      "source_url": "https://www.askgamblers.com/casino-bonuses/latest/yesplay-casino-100percent-up-to-3000-2023-10-24",
+      "extraction_status": "ok",
+      "validation_notes": null,
+      "retrieved_at": "2026-10-14T16:30:18+00:00",
+      "raw_source_text": "YesPlay Casino\n100% up to 3000 ZAR\nMinimum Deposit 20 ZAR. Wagering Requirements 7x(d+b)"
+    },
+    {
+      "casino_name": "BetBeast Casino",
+      "welcome_bonus": "250% up to €1000 + 250 Free Spins on 1st deposit",
+      "wagering_requirement": {
+        "multiplier": 25.0,
+        "applies_to": "deposit_plus_bonus",
+        "notes": "Source shorthand 25x(d+b): 25x on deposit plus bonus. Wagering for the free spins is not stated in the source text."
+      },
+      "minimum_deposit": {
+        "amount": 20.0,
+        "currency": "EUR",
+        "notes": null
+      },
+      "source_url": "https://www.askgamblers.com/casino-bonuses/latest/betbeast-casino-bonus-250percent-up-to-1000-eur-250-free-spins-2026-10-13",
+      "extraction_status": "partial",
+      "validation_notes": null,
+      "retrieved_at": "2026-10-14T16:30:18+00:00",
+      "raw_source_text": "BetBeast Casino\n250% up to €1000 + 250 Free Spins at BetBeast Casino, 1st Deposit\nMinimum Deposit €20. Wagering Requirements 25x(d+b)"
+    }
+  ]
+}
